@@ -1,4 +1,7 @@
-//Develop 브랜치 머지용 주석
 export default function Home() {
-  return <div>Home</div>
+  return <div>home</div>
 }
+
+/**
+ *  TODO : src폴더 생성 및 component,hooks,util 폴더 생성 하기
+ */
