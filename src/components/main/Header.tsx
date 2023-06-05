@@ -18,10 +18,17 @@ const Header = () => {
   const travelDistance = useRecoilValue(travelDistanceSelector)
   const calorieBurned = useRecoilValue(calorieBurnedSelector)
 
+  /**
+   * test 시뮬레이션
+   *  @stepCount : 걸음수
+   *  @travelDistance : 이동거리
+   * @calorieBurned : 칼로리
+   */
+
   useEffect(() => {
     setInterval(() => {
       setStepCount((prev) => prev + 1)
-    }, 500)
+    }, 10)
   }, [])
 
   return (
@@ -38,15 +45,17 @@ const Header = () => {
         {testUserLoggedIn.user_nickname}
       </div>
 
-      <div className="mt-5 flex">
+      <div className="flex justify-center items-center w-full mt-5 mx-0">
         <Image
-          className="mr-1"
-          src={'/footstep.png'}
-          width={30}
+          className="ml-1 mr-1"
+          src={'/footstep1.png'}
+          width={27}
           height={34}
           alt="footstep"
         />
-        <div className="text-3xl text-white ">{stepCount.toLocaleString()}</div>
+        <div className="w-10 text-3xl text-white text-center mr-10 ml-1">
+          {stepCount.toLocaleString()}
+        </div>
       </div>
 
       <div className="w-full mt-5 text-xs text-white flex justify-center items-center ">

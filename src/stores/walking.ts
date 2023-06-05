@@ -6,10 +6,11 @@ interface IUserData {
 }
 
 /**
- * ?사용자 설정 값 <키 , 체중>
- * 보폭  =  키 * 0.45
- * 이동거리 = 보폭 * 걸음수
- * 소모 칼로리  =  이동거리 * 체중 *1.036
+ * test state
+ *  @testUserData :기본 user setting 값
+ *  @stepCountState : 걸음수
+ *  @travelDistanceSelector : 이동거리
+ *  @calorieBurnedSelector : 칼로리
  */
 
 export const testUserData = atom<IUserData>({
