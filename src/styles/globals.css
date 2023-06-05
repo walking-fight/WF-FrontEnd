@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 body {
-  margin-top: 44px;
-  margin-left: 24px;
-  margin-right: 24px;
+  height: calc(100vh - 72px);
+  width: 100%;
+  margin-top: 24px;
   margin-bottom: 48px;
+  background-color: #f4f6f8;
 }
